@@ -59,4 +59,10 @@ void main(void){
 
     printf("%d\n",strCmp(str1,str2));
 }
-
+==================三、const的用法=========================
+在C语言中，const是只读。
+const int a = 100 <==> int const a = 100;a空间是只读空间，a空间的值不能更改;
+const int *a; <==> int const *a;*a的值不能改变，a指针变量的值可以更改;
+int * const a;*a的值可以更改，a指针变量只读，不能改其值
+const int * const a;*a,a均只读空间，其值不可更改;
+const 离谁近，修饰谁，谁就不可更改。
